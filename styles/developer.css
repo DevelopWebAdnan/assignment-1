@@ -26,13 +26,21 @@ font-size: 16px;
 font-weight: 400;
 line-height: 26px;
 opacity: 0.7;
-margin: 24px 0;
+/* margin: 24px 0; */
 }
 
 .text-center{
   text-align: center;
 
 }
+.content-title {
+  
+  font-size: 24px;
+  
+  line-height: 36px;
+  /* letter-spacing: 0%; */
+  text-align: left;
+  }
 
 .btn{
   color: rgb(13, 19, 33);
@@ -86,8 +94,6 @@ color: rgb(255, 255, 255);
 main {
   max-width: 1140px;
   margin: 0 auto;
-  
-  
 }
 
 /* why-web section */
@@ -143,7 +149,7 @@ padding: 48px;
 
 .row-2{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: center;
 
@@ -156,17 +162,14 @@ padding: 48px;
   width: 205px;
 }
 
-.content-title {
+.row-content .content-title{
   color: rgba(13, 19, 33, 0.7);
-font-size: 24px;
-font-weight: 700;
-line-height: 36px;
-/* letter-spacing: 0%; */
-text-align: left;
+  font-weight: 700;
 
 }
 
-.learn-more{
+
+.row-content .learn-more{
   box-sizing: border-box;
 border: 1px solid rgb(13, 19, 33);
 opacity: 0.7;
@@ -197,4 +200,72 @@ margin: 48px 0;
 
 .video-container iframe{
   border-radius: 16px;
+}
+
+/* current section */
+.current{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 111px 0;
+}
+
+.current-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 48px 0;
+}
+
+.current-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  margin: 0 24px;
+  border-radius: 16px;
+
+}
+.column-1{
+  background: rgba(255, 76, 30, 0.05);
+}
+.column-2{
+background: rgba(0, 76, 232, 0.05);
+}
+.column-3{
+background: rgba(255, 223, 0, 0.05);
+}
+.column-content{
+  max-width: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  /* margin: 32px 0; */
+}
+.column-content img{
+  width: 56px;
+  height: 56px;
+  margin: 24px 0;
+
+}
+.column-content .content-title{
+  font-weight: 800;
+  color: rgb(13, 19, 33);
+}
+
+.column-content a{
+  color: rgb(13, 19, 33);
+font-family: Azeret Mono;
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0%;
+text-align: left;
+text-decoration-line: underline;
+margin: 24px 0;
 }
