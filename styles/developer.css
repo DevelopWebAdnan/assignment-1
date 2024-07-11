@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+.title-container{
+  max-width: 852px;
+  /* margin: 48px 0; */
+}
 .title {
   color: rgb(13, 19, 33);
 /* font-family: Azeret Mono; */
@@ -13,7 +17,7 @@ font-weight: 800;
 line-height: 37px;
 /* letter-spacing: 0%; */
 text-align: center;
-/* margin: 24px 0; */
+margin: 24px 0;
 }
 
 .title-description {
@@ -21,9 +25,8 @@ text-align: center;
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
-
 opacity: 0.7;
-/* margin: 24px 0; */
+margin: 24px 0;
 }
 
 .text-center{
@@ -84,8 +87,7 @@ main {
   max-width: 1140px;
   margin: 0 auto;
   
-  border-radius: 16px;
-background: rgba(13, 19, 33, 0.02);
+  
 }
 
 /* why-web section */
@@ -95,7 +97,8 @@ background: rgba(13, 19, 33, 0.02);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
 }
 .why-web-container {
   margin: 48px 0;
@@ -169,4 +172,29 @@ border: 1px solid rgb(13, 19, 33);
 opacity: 0.7;
 padding: 12px 20px 12px 20px;
 margin: 32px 0;
+}
+
+/* inspiration section */
+.inspiration{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.video-container{
+  box-sizing: border-box;
+border: 1px solid rgba(13, 19, 33, 0.2);
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 32px;
+margin: 48px 0;
+}
+
+.video-container iframe{
+  border-radius: 16px;
 }
