@@ -13,7 +13,7 @@ font-weight: 800;
 line-height: 37px;
 /* letter-spacing: 0%; */
 text-align: center;
-margin: 24px 0;
+/* margin: 24px 0; */
 }
 
 .title-description {
@@ -21,11 +21,26 @@ margin: 24px 0;
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
-text-align: center;
+
 opacity: 0.7;
-margin: 24px 0;
+/* margin: 24px 0; */
 }
 
+.text-center{
+  text-align: center;
+
+}
+
+.btn{
+  color: rgb(13, 19, 33);
+font-family: Azeret Mono;
+font-size: 20px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0%;
+text-align: center;
+cursor: pointer;
+}
 /* header */
 .header {
   background-image: url('../assets/Hero-bg.png');
@@ -43,7 +58,7 @@ margin: 24px 0;
 
 .banner-pic {
     width: 240px;
-    height: 240px;
+    /* height: 240px; */
 }
 
 .banner-title {
@@ -61,23 +76,27 @@ background: rgb(13, 19, 33);
 padding: 21px 24px 21px 24px;
 margin: 32px 0;
 color: rgb(255, 255, 255);
-font-family: Azeret Mono;
-font-size: 20px;
-font-weight: 600;
-line-height: 23px;
-text-align: center;
+
 }
 
 /* main styles */
 main {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 80px 97px 80px 97px;
+  
   border-radius: 16px;
 background: rgba(13, 19, 33, 0.02);
 }
 
 /* why-web section */
+.why-web{
+  padding: 80px 97px 80px 97px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
 .why-web-container {
   margin: 48px 0;
   display: flex;
@@ -91,15 +110,19 @@ background: rgba(13, 19, 33, 0.02);
   border-radius: 16px;
 background: linear-gradient(90.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
 margin: 32px 0;
-padding: 40px;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-max-width: 850px;
-/* gap:100px; */
+padding: 48px;
 }
 
+.row-1, .row-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:100px;
+}
+.row-3{
+  gap:130px;
+}
 .row-1 img {
   width: 260px;
 
@@ -112,12 +135,38 @@ max-width: 850px;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0;
+
 }
 
+.row-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
 .row-2 img {
   width: 220px;
 }
 
 .row-3 img {
   width: 205px;
+}
+
+.content-title {
+  color: rgba(13, 19, 33, 0.7);
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+/* letter-spacing: 0%; */
+text-align: left;
+
+}
+
+.learn-more{
+  box-sizing: border-box;
+border: 1px solid rgb(13, 19, 33);
+opacity: 0.7;
+padding: 12px 20px 12px 20px;
+margin: 32px 0;
 }
